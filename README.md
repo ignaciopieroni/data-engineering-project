@@ -1,13 +1,35 @@
 # Proyecto de Data Engineering con Python
 
-En este proyecto trabajaremos con datos del mundo real utilizando Python para obtenerlos<br>
-directamente de una página utilizando técnicas de Web Scraping, transformando los datos<br>
-para los requerimientos dados y guardandolos como un archivo local como tabla en una base de datos.<br>
-También correremos queries básicas en dicha base de datos con Python.<br>
+In this project, we'll work with real-world data using Python to obtain it<br>
+directly from a webpage using Web Scraping techniques, transforming the data<br>
+to meet the given requirements, and saving it as a local file as a table in a database.<br>
+We will also run basic queries on that database using Python.<br>
 <br>
-Se pondrán en uso conceptos básicos sobre el proceso <strong>ETL (extract-transform-load)</strong>, extraeremos<br>
-información requerida utilizando técnicas de <strong>Web Scraping</strong> y <strong>API's</strong>, desarrollando un <strong>ETL Pipeline</strong><br>
-funcional para las etapas de adquisición y procesamiento de los datos ingestados en múltiples formatos provenientes del sitio web disponible en un dominio público.<br>
+Basic concepts of the <strong>ETL (extract-transform-load)</strong> process will be applied, extracting<br>
+the required information using <strong>Web Scraping</strong> and <strong>APIs</strong>, developing a functional<br>
+<strong>ETL Pipeline</strong> for the stages of data acquisition and processing of ingested data in multiple formats<br>
+from a piblic domain.<br>
 <br>
-Por último crearemos módulos, correremos pruebas unitarias, <strong>Package Applications</strong> y haremos un <strong>Static Code
-Analysis</strong> también con Python.
+Finally, we will create modules, run unit tests, <strong>Package Applications</strong>, and perform a <strong>Static Code<br>
+Analysis</strong> also using Python.
+
+# <h2>Proyect Scenario</h2>
+We are tasked with creating an automated script that can extract the list of all countries in order of their GDPs in billion USDs (rounded to 2 decimal places), as logged by the International Monetary Fund (IMF). Since IMF releases this evaluation twice a year, this code will be used by the organization to extract the information as it is updated.
+
+The required data seems to be available on the following <a href="https://web.archive.org/web/20230902185326/https://en.wikipedia.org/wiki/List_of_countries_by_GDP_%28nominal%29" target="_blank">URL</a>
+
+<p>
+The required information needs to be made accessible as a <strong>CSV</strong> file 
+<strong>Countries_by_GDP.csv</strong> as well as a table <strong>Countries_by_GDP</strong> 
+in a database file <strong>World_Economies.db</strong> with attributes 
+<strong>Country</strong> and <strong>GDP_USD_billion</strong>.
+</p>
+
+<p>
+To demonstrate the success of this code, we'll run a query on the database table to display only the entries with more than a 100 billion USD economy. Also, we'll log in a file with the entire process of execution named 
+<strong>etl_project_log.txt</strong>.
+</p>
+
+<p>
+We'll create a Python code <strong>etl_project_gdp.py</strong> that performs all the required tasks.
+</p>
