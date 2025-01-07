@@ -14,7 +14,7 @@
 # CCODE	Country code (2 letters)
 
 
-# For the purpose of this proyect, we are going to create the database on a dummy server using SQLite3 library.
+# For the purpose of this project, we are going to create the database on a dummy server using SQLite3 library.
 # Download the required data
 
 
