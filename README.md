@@ -13,35 +13,6 @@ Finally, we will create modules, run unit tests, <strong>Package Applications</s
 Analysis</strong> also using Python.
 
 <h2>Project Scenario</h2>
-We are tasked with creating an automated script that can extract the list of all countries in order of their GDPs in billion USDs (rounded to 2 decimal places), as logged by the International Monetary Fund (IMF). Since IMF releases this evaluation twice a year, this code will be used by the organization to extract the information as it is updated.
+Our job is to access and process data as per requirements.
 
-The required data seems to be available on the following <a href="https://web.archive.org/web/20230902185326/https://en.wikipedia.org/wiki/List_of_countries_by_GDP_%28nominal%29" target="_blank">URL</a>
-
-<p>
-The required information needs to be made accessible as a <strong>CSV</strong> file 
-<strong>Countries_by_GDP.csv</strong> as well as a table <strong>Countries_by_GDP</strong> 
-in a database file <strong>World_Economies.db</strong> with attributes 
-<strong>Country</strong> and <strong>GDP_USD_billion</strong>.
-</p>
-
-<p>
-To demonstrate the success of this code, we'll run a query on the database table to display only the entries with more than a 100 billion USD economy. Also, we'll log in a file with the entire process of execution named 
-<strong>etl_project_log.txt</strong>.
-</p>
-
-<p>
-We'll create a Python code <strong>etl_project_gdp.py</strong> that performs all the required tasks.
-</p>
-
-<h2>Objectives</h2>
-<p>
-  Write a data extraction function to retrieve the relevant information from the required URL.
-  
-  Transform the available GDP information into 'Billion USD' from 'Million USD'.
-  
-  Load the transformed information to the required CSV file and as a database file.
-  
-  Run the required query on the database.
-  
-  Log the progress of the code with appropriate timestamps.
-</p>
+We are asked to compile the list of the top 10 largest banks in the world ranked by market capitalization in billion USD. Further, we need to transform the data and store it in USD, GBP, EUR, and INR per the exchange rate information made available to me as a CSV file. We'll save the processed information as a table, locally in a CSV format and as a database table. Provide the data ready for queries for extracing the list and note the market capitalization value in their own currency.
