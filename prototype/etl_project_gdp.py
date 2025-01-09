@@ -41,7 +41,7 @@ def extract(url,table_attribs):
 def transform(df):
     ''' This function converts the GDP information from Currency
     format to float value, transforms the information of GDP from
-    USD (Millions) to USD (Billions) rounding to 2 holadecimal places.
+    USD (Millions) to USD (Billions) rounding to 2 decimal places.
     The function returns the transformed dataframe.'''
     GDP_list = df['GDP_USD_billion'].tolist()
     GDP_list =[float(''.join(x.split(','))) for x in GDP_list]
@@ -109,3 +109,5 @@ run_query(query_statement, conn)
 log_progress('Process Complete.')
 
 conn.close()
+
+log_progress('Server Connection closed')
